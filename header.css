@@ -2,13 +2,13 @@ html, body {
     overflow-x: hidden;
     margin: 0px;
     padding: 0px;
+    font-family: 'Nimbus Sans L', sans-serif;
 }
 .page {
     height: 100%;
     width: 100%;
-/*    display: flex;*/
-/*    flex-direction: column;*/
 }
+
 .header {
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@ html, body {
 }
 .bannertitle {
     color: white;
-    font-family: ICTbold, sans-serif;
+    font-weight: bold;
     font-size: 40px;
     text-shadow: 1px 1px #000000;
     text-align: center;
@@ -58,38 +58,109 @@ html, body {
         min-height: 40px;
     }
 }
+.menu a {
+    color: white;
+}
 
 a {
-    color: white;
+    color: #1E274A;
     text-decoration: none;
 }
+
 a:hover {
-    text-decoration: underline;
+    font-weight: bold;
+    text-decoration: none;
+    color: #E8308A;
 }
+
 .menu {
     flex: 0;
     display: flex;
-    background: #40556A;
+    background: #1E274A;
     flex-basis: 50px;
     align-items: center;
     justify-content: center;
     min-height: 50px;
+    margin-top: -20px;
 }
-
 .menu > a {
     color: white;
-    font-family: ICTbold, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     position: relative;
 }
-.menu > a:not(:last-child) {
-    margin-right: 16px;
+.menu > li:not(:last-child) {
+    margin-right: 20px;
 }
-.menu > a:not(:last-child):after {
-    position: absolute;
+
+.active {
+    color: red;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li:not(:last-child):after {
+    position: relative;
     right: -12px;
+    margin-left: 20px;
+    margin-right: 20px;
     content: '|';
+    color: white;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  background-color: #1E274A;
+}
+
+/* Dropdown Button */
+.dropbtn:hover {
+  color: #E8308A;
+  font-weight: bold;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: white;
+  z-index: 1;
+  border-color: black;
+  width: 100%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a:hover {
+  color: #E8308A;
+  font-weight: bold;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+    color: #E8308A;
+    font-weight: bold;
 }
 
 @font-face {

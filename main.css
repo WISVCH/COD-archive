@@ -1,25 +1,40 @@
+html, body, div, span, embed {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: 'Nimbus Sans L', sans-serif;
+}
+
 .textbox p {
     text-align:justify;
-    font-family: ICT, sans-serif;
 }
-.textbox h2 {
-    color: #40556A;
-}
-.textbox h3 {
-    color: #40556A;
-}
-.textbox a {
-    color: #40556A;
-    text-align: center;
+
+.textbox h2, h3, a {
+    color: #1E274A;
+    text-align: center
 }
 .textbox > a:not(:last-child) {
     margin-right: 16px;
 }
 
+p a {
+    color: #E8308A;
+}
+
+p a:hover {
+    text-decoration: underline;
+    font-weight: normal; 
+}
+
 .textbox {
     display: block;
     flex: 0;
-    font-family: ICTbold, sans-serif;
     font-size: 15px;
     color: black;
 /*    border: 1px solid black;*/
@@ -35,7 +50,6 @@
     flex-direction: column;
     padding: 8px;
     min-height: 500px;
-    overflow: auto;
     margin: 0px auto 20px auto;
 }
 
@@ -98,7 +112,6 @@
     flex: 688;
     margin: 5px;
     text-align: justify;
-    font-family: ICT, sans-serif;
     font-size: 16px;
     margin-right:24px;
 }
@@ -185,5 +198,5 @@
     .mobile {
         display: block;
     }
-}
 
+}
