@@ -77,14 +77,14 @@ p a:hover {
     border-radius: 10px;
 }
 
-.companies2020 {
+.companies {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.company2020 {
+.company {
     min-height: 180px;
     width: 100%;
     flex: 1;
@@ -189,7 +189,7 @@ p a:hover {
     .companydesc {
         display:none;
     }
-    .companies2020 {
+    .companies {
         width: 100%;
     }
     .pc {
