@@ -9,8 +9,8 @@
 /*    height: 512px;*/
     padding: 8px;
     background: #d7dbe0;
-    font-family: ICTBold, sans-serif;
 }
+
 .footerbar {
     position: relative;
     top:0%;
@@ -38,29 +38,19 @@
     height: 188px;
     width: 1024px;
 }
-.test1 {
-/*    border: 1px solid black;*/
-    top: 20%;
-    height: 128px;
-    width: 256px;
-    margin-right: 200px;
-    text-align: center;
-}
-.test2 {
-/*    border: 1px solid black;*/
+
+.footer-list {
     top: 20%;
     height: 128px;
     width: 256px;
     text-align: center;
 }
+
+
 @media(min-width: 858px){
     .footerbox {
         flex-direction: row;
         height: 188px;
-    }
-    .test1 {
-        margin-right: 200px;
-        margin-bottom: 0px;
     }
 }
 @media(max-width: 857px){
@@ -68,34 +58,27 @@
         flex-direction: column;
         height: 296px;
     }
-    .test1 {
-        margin-right: 0px;
-        margin-bottom: 32px;
-    }
 }
 
 .footer p {
     text-align:justify;
-    font-family: ICT, sans-serif;
     margin-top: 4px;
     margin-bottom: 2px;
+}
+.footer {
+    color: #1E274A;
+    text-align: center;
+    font-family: 'Nimbus Sans L', sans-serif;
 }
 .footer h2 {
-    color: #40556A;
     margin-top: 4px;
     margin-bottom: 4px;
-    text-align: center;
 }
 .footer h3 {
-    color: #40556A;
     margin-top: 2px;
     margin-bottom: 2px;
-    text-align: center;
 }
-.footer a {
-    color: #40556A;
-    margin-bottom: 4px;
-}
+
 .footer > a:not(:last-child) {
     margin-right: 16px;
 }
