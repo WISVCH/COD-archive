@@ -128,10 +128,6 @@ p a:hover {
     background-size: contain;
 }
 
-.mobile {
-    display: none;
-}
-
 @media(min-width: 858){
     .content {
         min-height: 540px;
@@ -166,6 +162,9 @@ p a:hover {
     }
 }
 @media(max-width: 857px){
+    body {
+        font-family: 'Nimbus Sans L', sans-serif;
+    }
     .content {
         min-height: 450px;
         width: 96%;
@@ -192,11 +191,4 @@ p a:hover {
     .companies {
         width: 100%;
     }
-    .pc {
-        display: none;
-    }
-    .mobile {
-        display: block;
-    }
-
 }
