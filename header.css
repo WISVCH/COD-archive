@@ -160,6 +160,44 @@ ul li:not(:last-child):after {
         font-size: 32px;
         font-family: 'Nimbus Sans L', sans-serif;
     }
+    .menu {
+      font-size: 12px;
+    }
+    .dropdown .dropbtn {
+      font-size: 12px;
+      padding: 0;
+    }
+    ul li:not(:last-child):after {
+      position: relative;
+      right: 0;
+      margin-left: 0;
+      margin-right: 0px;
+      content: none;
+      color: white;
+    }
+    .register {
+      margin-left: -10px;
+    }
+    ul li:first-child {
+      margin-left: -35px;
+    }
+    .dropdown:active .dropdown-content {display: block;}
+    .dropdown:active .dropbtn {
+        color: #E8308A;
+        font-weight: bold;
+    }
+    .dropdown-content a:active {
+      color: #E8308A;
+      font-weight: bold;
+    }
+    .dropbtn:active {
+      color: #E8308A;
+      font-weight: bold;
+    }
+    .dropdown-content a {
+      padding: 10px 0px;
+
+    }
     .logo {
         min-height: 40px;
     }
